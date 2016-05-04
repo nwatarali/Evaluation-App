@@ -1,0 +1,30 @@
+Installation Note:
+
+0) System is tested on WAMP environment as well Ubuntu. So selection of different environment or different OS platform might cause some technical problems. 
+ 
+1) Do following changes in php.ini file.
+
+   1)	register_long_arrays = on
+   2)	display_errors = on
+   3)	short_open_tag = on
+   4)	register_globals = on   
+
+2) Create Database
+
+3) Import feedback/feedback_database/updated_database.sql file
+
+4) Put extracted folder into web(eg. www) directory.
+
+5) Change configuration in admin/includes/common_functions.php  
+   & update the 'host', 'database', 'user', and 'password' variables as necessary.
+
+6) Give permission to /admin/excel_report and /admin/images folder.
+
+7) Open browser & type http://<ip-address>/feedback and/or http://<ip-address>/feedback/admin
+Login with username as 'admin' and password as '12345' at admin side 
+
+8) Best view in Mozilla-Firefox / Google Chrome
+
+#for support please email me: shrenik181986@gmail.com
+Thank you
+Enjoy! ;)

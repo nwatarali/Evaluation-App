@@ -1,0 +1,93 @@
+Faculty evaluation system is based on schools/colleges/teaching institute's evaluation system which is generally paper based and now to save trees I have developed small web-based intranet system. 
+
+Features
+========
+
+1) php/mysql open source and generalized 
+2) Ajax is used for filtration and to get faster response
+3) Graph, Reports and Excel file are generated of individual faculty with remarks (if student has entered remark)
+
+Note
+====
+Commercial patch is available for "Student Login" with student id generator. 
+For more detail & customization please contact on shrenik181986@gmail.com 
+
+Live Demo
+=========
+
+http://shrenikp.netii.net/feedback/ 
+Username : 13A001 
+Password : 13A001 
+
+http://shrenikp.netii.net/feedback/admin/ 
+Username: admin 
+Password: 12345	
+
+Details of feedback system
+==========================
+
+Structure of the institute 
+
+Batch -> Branch -> Semester -> Division -> Faculty -> Subject
+
+So You can Add/Edit/Delete to Batch, Branch, Semester, Division, Faculty & Subject
+
+Example:
+
+	Batch: August '08
+	Branch: Network and Telecommunication
+	Faculty: 1) Rajesh Mishra
+		   2) Mohan Das
+
+	Subject: 1) Routing Protocol taught by Rajesh Mishra in Semester (I) & Division (Class B)
+		   2) Computer Networks taught by Mohan Das in Semester (I) & Division (Class B)
+
+Set parameter: Batch -> Branch -> Semester -> Division to get the result(graph/excel) from feedback.php page. 
+
+Faculty evaluation Parameter: Feedback Ques
+
+You can change evaluation parameter by editing it.
+
+Students will rate the Subject faculty within the range of 0 - 9
+
+Graph will be generated according to the number of student and their rating.
+
+You can also take backup of your database.
+
+
+Installation
+============
+
+0) System is tested on WAMP environment as well Ubuntu. So selection of different environment or different OS platform might cause some technical problems. 
+ 
+1) Do following changes in php.ini file.
+
+   1)	register_long_arrays = on
+   2)	display_errors = on
+   3)	short_open_tag = on
+   4)	register_globals = on   
+
+2) Create Database
+
+3) Import feedback/feedback_database/updated_database.sql file
+
+4) Put extracted folder into web(eg. www) directory.
+
+5) Change configuration in admin/includes/common_functions.php  
+   & update the 'host', 'database', 'user', and 'password' variables as necessary.
+
+6) Give permission to /admin/excel_report and /admin/images folder.
+
+7) Open browser & type http://<ip-address>/feedback and/or http://<ip-address>/feedback/admin
+Login with username as 'admin' and password as '12345' at admin side 
+
+8) Best view in Mozilla-Firefox / Google Chrome
+
+Enjoy... 
+
+#For more support: 
+email : shrenik181986@gmail.com
+
+Shrenik Patel
+http://in.linkedin.com/in/shrenikp/
+
